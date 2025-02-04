@@ -1,0 +1,33 @@
+
+
+# 📌 Git Basics  
+
+## 🔹 What is Git?  
+**Git** is a distributed version control system that helps track changes in code, collaborate with teams, and manage project history effectively.  
+
+## 🔹 Why use Git?  
+- Saves the complete history of a project.  
+- Simplifies collaboration in software development.  
+- Allows easy rollback to previous versions.  
+- Works with both **local** and **remote** repositories.  
+
+## 🔹 Essential Git Commands  
+| Command | Description |
+|---------|------------|
+| `git init` | Initializes a new local repository |
+| `git clone <URL>` | Clones a remote repository |
+| `git status` | Shows the current status of files (modified, staged, etc.) |
+| `git add .` | Adds all changes to the staging area |
+| `git commit -m "Message"` | Saves changes with a commit message |
+| `git push origin main` | Pushes changes to a remote repository |
+| `git pull origin main` | Updates the local repository from the remote |
+| `git log` | Displays the commit history |
+
+## 🔹 What I Learned Today  
+✅ **Git** is a powerful tool for managing code.  
+✅ It helps **track changes** and **maintain project history**.  
+✅ Git works with **both local and remote repositories**.  
+✅ The most important commands include `git init`, `git add`, `git commit`, `git push`, and `git pull`.  
+✅ **GitHub** is a platform for storing and collaborating on Git repositories.  
+
+
