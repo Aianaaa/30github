@@ -1,33 +1,43 @@
+ 📌 Git Basics  
 
+ 🔹 What is Git?  
+Git is a distributed version control system that helps track changes in code, collaborate with teams, and manage project history effectively.  
 
-# 📌 Git Basics  
-
-## 🔹 What is Git?  
-**Git** is a distributed version control system that helps track changes in code, collaborate with teams, and manage project history effectively.  
-
-## 🔹 Why use Git?  
+🔹 Why use Git?  
 - Saves the complete history of a project.  
 - Simplifies collaboration in software development.  
 - Allows easy rollback to previous versions.  
-- Works with both **local** and **remote** repositories.  
+- Works with both local and remote repositories.  
 
-## 🔹 Essential Git Commands  
-| Command | Description |
-|---------|------------|
-| `git init` | Initializes a new local repository |
-| `git clone <URL>` | Clones a remote repository |
-| `git status` | Shows the current status of files (modified, staged, etc.) |
-| `git add .` | Adds all changes to the staging area |
-| `git commit -m "Message"` | Saves changes with a commit message |
-| `git push origin main` | Pushes changes to a remote repository |
-| `git pull origin main` | Updates the local repository from the remote |
-| `git log` | Displays the commit history |
+ 🔹 Essential Git Commands  
 
-## 🔹 What I Learned Today  
+ 🔹 Initialize a Git repository  
+- `git init` → Creates a new local repository  
+
+ 🔹 Clone a repository  
+- `git clone <URL>` → Copies a remote repository to your computer  
+
+ 🔹 Check status  
+- `git status` → Shows modified, staged, or untracked files  
+
+ 🔹 Add changes  
+- `git add .` → Adds all changes to the staging area  
+
+ 🔹 Commit changes  
+- `git commit -m "Your message"` → Saves changes with a message  
+
+🔹 Push to GitHub  
+- `git push origin main` → Uploads local changes to the remote repository  
+
+ 🔹 Pull the latest changes  
+- `git pull origin main` → Fetches and merges changes from the remote repository  
+
+ 🔹 View commit history  
+- `git log` → Displays previous commits  
+
+ 🔹 What I Learned Today  
 ✅ **Git** is a powerful tool for managing code.  
 ✅ It helps **track changes** and **maintain project history**.  
 ✅ Git works with **both local and remote repositories**.  
 ✅ The most important commands include `git init`, `git add`, `git commit`, `git push`, and `git pull`.  
 ✅ **GitHub** is a platform for storing and collaborating on Git repositories.  
-
-
