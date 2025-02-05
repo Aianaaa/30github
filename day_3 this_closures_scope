@@ -1,0 +1,90 @@
+// Advanced JavaScript: Understanding this, Closures, and Scope
+
+// 1. Understanding 'this' in JavaScript
+// 'this' refers to the object that is executing the current function.
+// Its value depends on how and where the function is called.
+
+// Example 1: Global Context
+console.log(this); // In browser: window, In Node.js: global object
+
+// Example 2: Object Method
+const obj = {
+    name: "Ayana",
+    greet: function () {
+        console.log("Hello, " + this.name);
+    }
+};
+obj.greet(); // 'this' refers to obj
+
+// Example 3: Arrow Functions and 'this'
+const obj2 = {
+    name: "Ayana",
+    greet: () => {
+        console.log("Hello, " + this.name);
+    }
+};
+obj2.greet(); // 'this' is not bound to obj2, but to its surrounding scope
+
+// Example 4: Constructor Functions
+function Person(name) {
+    this.name = name;
+}
+const person1 = new Person("Ayana");
+console.log(person1.name); // 'this' refers to the new object created
+
+// Example 5: Explicit Binding with call, apply, and bind
+function sayHello() {
+    console.log("Hello, " + this.name);
+}
+const user = { name: "Ayana" };
+sayHello.call(user); // 'this' explicitly set to 'user'
+
+// 2. Closures in JavaScript
+// A closure is a function that remembers its outer variables even after execution.
+
+function outerFunction(outerVariable) {
+    return function innerFunction(innerVariable) {
+        console.log(`Outer: ${outerVariable}, Inner: ${innerVariable}`);
+    };
+}
+const newFunction = outerFunction("Ayana");
+newFunction("JavaScript"); // Outer: Ayana, Inner: JavaScript
+
+// 3. Scope in JavaScript
+// Scope defines where variables and functions are accessible.
+
+// Global Scope
+let globalVar = "I am global";
+function showGlobal() {
+    console.log(globalVar); // Accessible
+}
+showGlobal();
+
+// Function Scope
+function functionScope() {
+    let functionVar = "I am inside a function";
+    console.log(functionVar);
+}
+// console.log(functionVar); // Error: functionVar is not defined
+
+// Block Scope (let & const)
+if (true) {
+    let blockVar = "I am inside a block";
+    console.log(blockVar);
+}
+// console.log(blockVar); // Error: blockVar is not defined
+
+// Lexical Scope
+function outer() {
+    let outerVar = "Outer Variable";
+    function inner() {
+        console.log(outerVar); // Accessible due to lexical scoping
+    }
+    inner();
+}
+outer();
+
+// Conclusion
+// - 'this' depends on how the function is called.
+// - Closures allow functions to remember their lexical scope.
+// - Scope defines variable access and lifetime.
