@@ -1,35 +1,34 @@
-# Mastering ES6+ Features: Destructuring, Spread/Rest, and Arrow Functions
+Mastering ES6+ Features: Destructuring, Spread/Rest, and Arrow Functions
 
-## Introduction
+Introduction
 ES6+ (ECMAScript 2015 and beyond) introduced powerful features that make JavaScript more concise and readable. This guide covers three essential ES6+ concepts: **Destructuring**, **Spread/Rest Operators**, and **Arrow Functions**. Mastering these features will help you write modern and efficient JavaScript code.
 
-## 1. Destructuring
+1. Destructuring
 Destructuring allows extracting values from arrays or objects into variables with a concise syntax.
 
-### Array Destructuring
+Array Destructuring
 ```javascript
 const numbers = [1, 2, 3];
 const [first, second, third] = numbers;
 console.log(first, second, third); // Output: 1 2 3
 ```
 
-### Object Destructuring
+Object Destructuring
 ```javascript
 const user = { name: 'Alice', age: 25 };
 const { name, age } = user;
 console.log(name, age); // Output: Alice 25
 ```
-
-### Default Values
+Default Values
 ```javascript
 const { city = 'Unknown' } = user;
 console.log(city); // Output: Unknown
 ```
 
-## 2. Spread and Rest Operators
+2. Spread and Rest Operators
 The spread (`...`) and rest (`...`) operators allow working with iterable data structures efficiently.
 
-### Spread Operator
+Spread Operator
 Used to expand elements of an array or properties of an object.
 
 ```javascript
@@ -43,8 +42,7 @@ const user1 = { name: 'Bob', age: 30 };
 const user2 = { ...user1, city: 'New York' };
 console.log(user2); // Output: { name: 'Bob', age: 30, city: 'New York' }
 ```
-
-### Rest Operator
+Rest Operator
 Used to collect remaining elements into an array.
 
 ```javascript
@@ -60,28 +58,28 @@ printUser({ name: 'Charlie', age: 35, country: 'USA' });
 // Output: Charlie { age: 35, country: 'USA' }
 ```
 
-## 3. Arrow Functions
+3. Arrow Functions
 Arrow functions provide a shorter syntax for writing functions and automatically bind `this`.
 
-### Basic Syntax
+Basic Syntax
 ```javascript
 const add = (a, b) => a + b;
 console.log(add(2, 3)); // Output: 5
 ```
 
-### Implicit Return
+Implicit Return
 ```javascript
 const square = x => x * x;
 console.log(square(4)); // Output: 16
 ```
 
-### Arrow Function in Callbacks
+Arrow Function in Callbacks
 ```javascript
 const numbers = [1, 2, 3, 4];
 const doubled = numbers.map(num => num * 2);
 console.log(doubled); // Output: [2, 4, 6, 8]
 ```
 
-## Conclusion
+Conclusion
 Understanding **Destructuring**, **Spread/Rest Operators**, and **Arrow Functions** will significantly improve your JavaScript skills. These ES6+ features make your code more concise, readable, and efficient. Start incorporating them into your projects today!
 
