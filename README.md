@@ -6,13 +6,13 @@ Welcome to my **30-day GitHub challenge**! Over the next 30 days, I’ll be divi
 ## 📅 Challenge Plan
 
 ### Week 1: Advanced Frontend Development
-✅ **Day 1:** Advanced JavaScript: Understanding `this`, closures, and scope  
-✅ **Day 2:** Mastering ES6+ Features: Destructuring, Spread/Rest, and Arrow Functions  
-✅ **Day 3:** Asynchronous JavaScript: `async/await`, Promises, and error handling  
-✅ **Day 4:** Deep Dive into DOM Manipulation: `createElement`, `removeChild`, and custom events  
-✅ **Day 5:** CSS Grid and Flexbox: Building responsive layouts with precision  
-✅ **Day 6:** Advanced CSS: Custom Properties, Variables, and Animations  
-✅ **Day 7:** Introduction to CSS-in-JS and Styled Components (for React)
+✅ **Day 3:** Advanced JavaScript: Understanding `this`, closures, and scope  
+✅ **Day 4:** Mastering ES6+ Features: Destructuring, Spread/Rest, and Arrow Functions  
+✅ **Day 5:** Asynchronous JavaScript: `async/await`, Promises, and error handling  
+✅ **Day 6:** Deep Dive into DOM Manipulation: `createElement`, `removeChild`, and custom events  
+✅ **Day 7:** CSS Grid and Flexbox: Building responsive layouts with precision  
+✅ **Day 8:** Advanced CSS: Custom Properties, Variables, and Animations  
+✅ **Day 9:** Introduction to CSS-in-JS and Styled Components (for React)
 
 ### Week 2: Modern JavaScript Frameworks & Libraries
 🚀 **Day 8:** Introduction to React: JSX, Components, and Props  
