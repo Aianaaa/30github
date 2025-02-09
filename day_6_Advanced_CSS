@@ -1,0 +1,134 @@
+Advanced CSS: Custom Properties, Variables, and Animations
+
+CSS has powerful features that allow developers to create dynamic, reusable, and animated styles. Today, let's explore **CSS Variables (Custom Properties)** and **CSS Animations**.
+
+---
+
+1. CSS Custom Properties (Variables)
+CSS variables allow us to define reusable values in stylesheets.
+
+Declaring and Using CSS Variables
+```css
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-size: 16px;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: var(--font-size);
+}
+
+button {
+  background: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-color);
+}
+```
+- `:root` is a global scope for CSS variables.
+- Variables are used with `var(--variable-name)`.
+
+Changing CSS Variables Dynamically (JavaScript)
+```javascript
+document.documentElement.style.setProperty('--primary-color', '#ff5733');
+```
+This changes `--primary-color` dynamically.
+
+---
+
+2. CSS Animations**
+CSS provides animations using `@keyframes`.
+
+Basic Animation**
+```css
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  animation: fadeIn 2s ease-in-out;
+}
+```
+This animation gradually makes an element visible.
+
+Looping Animations**
+```css
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bouncing-box {
+  animation: bounce 1s infinite;
+}
+```
+
+---
+
+3. CSS Transitions**
+Transitions allow smooth changes between states.
+
+Example: Button Hover Effect**
+```css
+button {
+  background: var(--secondary-color);
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: var(--primary-color);
+}
+```
+
+---
+
+4. Advanced Animations: Combining Multiple Effects**
+```css
+@keyframes rotateAndScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  animation: rotateAndScale 3s infinite ease-in-out;
+}
+```
+
+---
+
+✅ Summary
+✔ **CSS Variables** make styling reusable and flexible.  
+✔ **CSS Animations** allow dynamic visual effects.  
+✔ **Transitions** create smooth state changes.  
+✔ **@keyframes** enable complex animations.  
+
