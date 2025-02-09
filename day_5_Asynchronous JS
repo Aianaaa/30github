@@ -2,14 +2,14 @@ Asynchronous JavaScript: async/await, Promises, and Error Handling
 
 JavaScript is single-threaded, meaning it executes one operation at a time. However, asynchronous programming allows non-blocking execution, enabling tasks like fetching data from APIs, reading files, or waiting for timers without freezing the UI.
 
-**1. Promises**
-A **Promise** is an object representing the eventual completion (or failure) of an asynchronous operation.
+1. Promises
+A Promise is an object representing the eventual completion (or failure) of an asynchronous operation.
 
-### **Creating a Promise**
+Creating a Promise
 A Promise has three states:
-- **Pending**: Initial state, not resolved or rejected.
-- **Fulfilled**: The operation completed successfully.
-- **Rejected**: The operation failed.
+- Pending: Initial state, not resolved or rejected.
+- Fulfilled: The operation completed successfully.
+- Rejected: The operation failed.
 
 ```javascript
 const fetchData = new Promise((resolve, reject) => {
