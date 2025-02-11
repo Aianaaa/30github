@@ -1,0 +1,75 @@
+CSS-in-JS is a styling approach where styles are written directly in JavaScript. This is useful for React applications as it allows for better component-based styling, avoids class name conflicts, and enables dynamic styling.
+
+🔹 What are Styled Components?
+Styled Components is one of the most popular CSS-in-JS libraries for React. It lets you write styles as components using template literals, making your styles more modular and reusable.
+
+🔹 Installation
+To use Styled Components, install the package:
+
+```sh
+npm install styled-components
+```
+
+or with Yarn:
+
+```sh
+yarn add styled-components
+```
+
+🔹 Basic Usage
+Instead of writing styles in a separate CSS file, you define them as JavaScript components:
+
+```jsx
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #2980b9;
+  }
+`;
+
+function App() {
+  return <Button>Click Me</Button>;
+}
+
+export default App;
+```
+
+🔹 Dynamic Styling
+You can pass props to change styles dynamically:
+
+```jsx
+const Button = styled.button`
+  background-color: ${(props) => (props.primary ? "#3498db" : "#2ecc71")};
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+function App() {
+  return (
+    <>
+      <Button primary>Primary Button</Button>
+      <Button>Secondary Button</Button>
+    </>
+  );
+}
+
+export default App;
+```
+
+🔹 Why Use Styled Components?
+✅ Scoped styles (no class name conflicts)  
+✅ Dynamic styling using props  
+✅ Better readability by keeping styles inside components  
+✅ Supports theming with `ThemeProvider`  
+
