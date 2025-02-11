@@ -15,13 +15,13 @@ Welcome to my **30-day GitHub challenge**! Over the next 30 days, I’ll be divi
 ✅ **Day 9:** Introduction to CSS-in-JS and Styled Components (for React)
 
 ### Week 2: Modern JavaScript Frameworks & Libraries
-🚀 **Day 8:** Introduction to React: JSX, Components, and Props  
-🚀 **Day 9:** React State Management: `useState`, `useReducer`, and Context API  
-🚀 **Day 10:** Component Lifecycle: `useEffect` and custom hooks in React  
-🚀 **Day 11:** Routing in React with `React Router`  
-🚀 **Day 12:** Introduction to Vue.js: Setting up Vue with Vuex for state management  
-🚀 **Day 13:** Advanced React Patterns: Higher-Order Components (HOCs) and Render Props  
-🚀 **Day 14:** Testing React Components with Jest and React Testing Library
+🚀 **Day 10:** Introduction to React: JSX, Components, and Props  
+🚀 **Day 11:** React State Management: `useState`, `useReducer`, and Context API  
+🚀 **Day 12:** Component Lifecycle: `useEffect` and custom hooks in React  
+🚀 **Day 13:** Routing in React with `React Router`  
+🚀 **Day 14:** Introduction to Vue.js: Setting up Vue with Vuex for state management  
+🚀 **Day 15:** Advanced React Patterns: Higher-Order Components (HOCs) and Render Props  
+🚀 **Day 16:** Testing React Components with Jest and React Testing Library
 
 ### Week 3: Backend Development & APIs
 🔥 **Day 15:** Introduction to Node.js: Setting up a server with Express.js  
