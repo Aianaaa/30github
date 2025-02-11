@@ -1,0 +1,90 @@
+🚀 Day 8: Introduction to React – JSX, Components, and Props  
+
+React is a JavaScript library for building user interfaces, especially single-page applications (SPAs). Today, we'll cover JSX, components, and props—three fundamental concepts in React.  
+
+
+
+🔹 What is JSX?  
+JSX (JavaScript XML) is a syntax extension that allows us to write HTML-like code inside JavaScript. It makes UI code more readable and expressive.
+
+Example of JSX:
+```jsx
+const element = <h1>Hello, React!</h1>;
+```
+JSX must return a **single parent element**. If you need multiple elements, wrap them inside a `<div>` or React fragment `<>...</>`.
+
+**✅ Correct JSX syntax:**  
+```jsx
+const element = (
+  <div>
+    <h1>Welcome</h1>
+    <p>This is JSX</p>
+  </div>
+);
+```
+
+❌ Incorrect JSX syntax (Multiple root elements):
+```jsx
+const element = (
+  <h1>Welcome</h1>
+  <p>This is JSX</p> 
+);
+```
+
+---
+
+🔹 Components in React  
+React apps are built using **components**. A component is a reusable UI element that returns JSX.
+ 🟢 Functional Component (Modern Approach)
+A function that returns JSX:
+```jsx
+function Welcome() {
+  return <h1>Hello, World!</h1>;
+}
+export default Welcome;
+```
+
+ 🟢 Using the Component  
+Import and use the component inside `App.js`:
+```jsx
+import Welcome from "./Welcome";
+
+function App() {
+  return <Welcome />;
+}
+
+export default App;
+```
+
+---
+
+🔹 Props (Properties) in React  
+Props allow us to **pass data** between components.
+
+🟢 Passing Props  
+```jsx
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+function App() {
+  return <Greeting name="Ayana" />;
+}
+```
+The `Greeting` component receives the `name` prop and displays `Hello, Ayana!`.
+
+🟢 Destructuring Props  
+Instead of using `props.name`, you can directly extract the prop:
+```jsx
+function Greeting({ name }) {
+  return <h1>Hello, {name}!</h1>;
+}
+```
+
+---
+
+🔥 Summary  
+✅ JSX allows writing HTML-like syntax inside JavaScript.  
+✅ Components make UI reusable and modular.  
+✅ Props help pass data between components.  
+
